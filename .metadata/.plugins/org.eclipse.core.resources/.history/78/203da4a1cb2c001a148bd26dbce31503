@@ -129,7 +129,9 @@ public class Client {
 								message = (String) in.readObject();
 								System.out.println(message);
 							}
-
+							
+							
+							
 						} else if (message.equals("3")) {
 							message = (String) in.readObject();
 							System.out.println(message);
@@ -137,14 +139,13 @@ public class Client {
 							sendMessage(message);
 
 							message = (String) in.readObject();
-
-							if(message.equals("Found")) {
+							if (message.equals("true")) {
 								message = (String) in.readObject();
 								System.out.println(message);
 								message = console.next();
 								sendMessage(message);
-								
-								message = (String) in.readObject();
+								System.out.println((String) in.readObject());
+							} else {
 								System.out.println(message);
 							}
 

@@ -119,16 +119,27 @@ public class Client {
 							sendMessage(message);
 
 							message = (String) in.readObject();
+							int PlayersSize = Integer.valueOf(message);
+
+							//							for (int i = 0; i < PlayersSize; i++) {
+							//								message = (String) in.readObject();
+							//								message = console.next();
+							//								System.out.println((String) in.readObject());
+							//							}
+
+							//							while(PlayersSize > 0) {
+							//								PlayersSize--;
+
+							message = (String) in.readObject();
 
 							if(message.equals("Found")) {
+								System.out.println("foundddddd");
 								message = (String) in.readObject();
-								System.out.println(message);
 								message = console.next();
-								sendMessage(message);
-								
-								message = (String) in.readObject();
-								System.out.println(message);
 							}
+							
+							System.out.println((String) in.readObject());
+
 
 						} else if (message.equals("3")) {
 							message = (String) in.readObject();
@@ -137,14 +148,13 @@ public class Client {
 							sendMessage(message);
 
 							message = (String) in.readObject();
-
-							if(message.equals("Found")) {
+							if (message.equals("true")) {
 								message = (String) in.readObject();
 								System.out.println(message);
 								message = console.next();
 								sendMessage(message);
-								
-								message = (String) in.readObject();
+								System.out.println((String) in.readObject());
+							} else {
 								System.out.println(message);
 							}
 

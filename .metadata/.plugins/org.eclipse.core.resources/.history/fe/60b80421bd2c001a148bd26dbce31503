@@ -103,15 +103,14 @@ public class Client {
 							System.out.println(message);
 							message = console.next();
 							sendMessage(message);
-
+							
 							message = (String) in.readObject();
 							int PlayersSize = Integer.valueOf(message);
-
 							for (int i = 0; i < PlayersSize; i++) {
 								message = (String) in.readObject();
 								System.out.println(message);
 							}
-
+							
 						} else if (message.equals("2")) {
 							message = (String) in.readObject();
 							System.out.println(message);
@@ -119,14 +118,13 @@ public class Client {
 							sendMessage(message);
 
 							message = (String) in.readObject();
-
-							if(message.equals("Found")) {
+							if (message.equals("true")) {
 								message = (String) in.readObject();
 								System.out.println(message);
 								message = console.next();
 								sendMessage(message);
-								
-								message = (String) in.readObject();
+								System.out.println((String) in.readObject());
+							} else {
 								System.out.println(message);
 							}
 
@@ -137,14 +135,13 @@ public class Client {
 							sendMessage(message);
 
 							message = (String) in.readObject();
-
-							if(message.equals("Found")) {
+							if (message.equals("true")) {
 								message = (String) in.readObject();
 								System.out.println(message);
 								message = console.next();
 								sendMessage(message);
-								
-								message = (String) in.readObject();
+								System.out.println((String) in.readObject());
+							} else {
 								System.out.println(message);
 							}
 
