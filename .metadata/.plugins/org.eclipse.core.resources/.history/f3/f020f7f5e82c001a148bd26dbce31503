@@ -105,105 +105,66 @@ public class Client {
 						message = (String) in.readObject();
 						System.out.println(message);
 						
-						do {
-							message = (String) in.readObject();
-							System.out.println(message);
-							message = console.next();
-							sendMessage(message);
-
-							if (message.equals("1")) {
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-								int PlayersSize = Integer.valueOf(message);
-
-								for (int i = 0; i < PlayersSize; i++) {
-									message = (String) in.readObject();
-									System.out.println(message);
-								}
-
-							} else if (message.equals("2")) {
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-
-								if (message.equals("Found")) {
-									message = (String) in.readObject();
-									System.out.println(message);
-									message = console.next();
-									sendMessage(message);
-
-									message = (String) in.readObject();
-									System.out.println(message);
-								}
-
-							} else if (message.equals("3")) {
-								message = (String) in.readObject();
-								System.out.println(message);
-								message = console.next();
-								sendMessage(message);
-
-								message = (String) in.readObject();
-
-								if (message.equals("Found")) {
-									message = (String) in.readObject();
-									System.out.println(message);
-									message = console.next();
-									sendMessage(message);
-
-									message = (String) in.readObject();
-									System.out.println(message);
-								}
-
-							} else {
-								message = (String) in.readObject();
-								System.out.println(message);
-							}
-						} while (!message.equals("404"));
-						
 					} while (!message.equals("3"));
-					
+
+					/*
+					 * do { message = (String) in.readObject(); System.out.println(message); message
+					 * = console.next(); sendMessage(message);
+					 * 
+					 * if (message.equals("1")) { message = (String) in.readObject();
+					 * System.out.println(message); message = console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); message =
+					 * console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); int PlayersSize =
+					 * Integer.valueOf(message);
+					 * 
+					 * for (int i = 0; i < PlayersSize; i++) { message = (String) in.readObject();
+					 * System.out.println(message); }
+					 * 
+					 * } else if (message.equals("2")) { message = (String) in.readObject();
+					 * System.out.println(message); message = console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject();
+					 * 
+					 * if (message.equals("Found")) { message = (String) in.readObject();
+					 * System.out.println(message); message = console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); }
+					 * 
+					 * } else if (message.equals("3")) { message = (String) in.readObject();
+					 * System.out.println(message); message = console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject();
+					 * 
+					 * if (message.equals("Found")) { message = (String) in.readObject();
+					 * System.out.println(message); message = console.next(); sendMessage(message);
+					 * 
+					 * message = (String) in.readObject(); System.out.println(message); }
+					 * 
+					 * } else { message = (String) in.readObject(); System.out.println(message); } }
+					 * while (!message.equals("404"));
+					 */
+
 				} else {
 					message = (String) in.readObject();
 					System.out.println(message);
